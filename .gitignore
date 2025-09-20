@@ -1,6 +1,11 @@
 # Ignore design and documentation files
 design.json
-*.md
+
+# Ignore specific markdown files (keep README.md)
+AXIS_TEMPLATE_GUIDE.md
+CUSTOMIZATION_EXAMPLES.md
+IMAGE_REPLACEMENT_GUIDE.md
+SaaS_Dashboard_PRD.md
 
 # Ignore system files
 .DS_Store
