@@ -1,0 +1,38 @@
+# Ignore design and documentation files
+design.json
+*.md
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.log
+
+# Ignore node modules if using npm
+node_modules/
+
+# Ignore package files
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore backup files
+*.bak
+*.backup
+*~
+
+# Ignore PHP session files
+*.sess
+
+# Ignore cache files
+*.cache

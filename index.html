@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>FitCore Gym - Transform Your Body, Transform Your Life</title>
+    <meta
+      name="description"
+      content="Premier fitness center offering personal training, group classes, and state-of-the-art equipment. Join 500+ members achieving their fitness goals with 95% success rate."
+    />
+    <meta
+      name="keywords"
+      content="gym, fitness center, personal training, group classes, weight loss, muscle building, cardio, strength training, FitCore, workout"
+    />
+
+    <!-- Favicons -->
+    <link
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏋️</text></svg>"
+      rel="icon"
+    />
+    <link
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏋️</text></svg>"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons CDN Primary -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+      integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26qAlAi/E4WtoZeJLdGV0uHQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap Icons Alternative CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
+
+    <!-- Icon Fix CSS -->
+    <style>
+      /* Ensure Bootstrap Icons load properly */
+      .bi::before,
+      [class^="bi-"]::before,
+      [class*=" bi-"]::before {
+        font-family: "bootstrap-icons" !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        line-height: 1 !important;
+        vertical-align: -0.125em !important;
+        -webkit-font-smoothing: antialiased !important;
+        -moz-osx-font-smoothing: grayscale !important;
+        display: inline-block !important;
+      }
+
+      /* Emoji fallbacks when Bootstrap Icons fail */
+      .bi-fallback .bi-code-slash::before {
+        content: "💻" !important;
+      }
+      .bi-fallback .bi-graph-up-arrow::before {
+        content: "📈" !important;
+      }
+      .bi-fallback .bi-bar-chart::before {
+        content: "📊" !important;
+      }
+      .bi-fallback .bi-link-45deg::before {
+        content: "🔗" !important;
+      }
+      .bi-fallback .bi-cloud-check::before {
+        content: "☁️" !important;
+      }
+      .bi-fallback .bi-lightbulb::before {
+        content: "💡" !important;
+      }
+      .bi-fallback .bi-award::before {
+        content: "🏆" !important;
+      }
+      .bi-fallback .bi-headset::before {
+        content: "🎧" !important;
+      }
+      .bi-fallback .bi-envelope::before {
+        content: "✉️" !important;
+      }
+      .bi-fallback .bi-arrow-right::before {
+        content: "→" !important;
+      }
+      .bi-fallback .bi-eye::before {
+        content: "👁️" !important;
+      }
+      .bi-fallback .bi-arrow-up-right::before {
+        content: "↗️" !important;
+      }
+      .bi-fallback .bi-chevron-down::before {
+        content: "▼" !important;
+      }
+      .bi-fallback .bi-list::before {
+        content: "☰" !important;
+      }
+      .bi-fallback .bi-star-fill::before {
+        content: "⭐" !important;
+      }
+      .bi-fallback .bi-chat-quote-fill::before {
+        content: "💬" !important;
+      }
+      .bi-fallback .bi-chat-dots::before {
+        content: "💬" !important;
+      }
+      .bi-fallback .bi-envelope-open::before {
+        content: "📧" !important;
+      }
+      .bi-fallback .bi-telephone-outbound::before {
+        content: "📞" !important;
+      }
+      .bi-fallback .bi-geo-alt-fill::before {
+        content: "📍" !important;
+      }
+    </style>
+
+    <!-- Icon Loading Script -->
+    <script>
+      // Ensure Bootstrap Icons load properly
+      document.addEventListener("DOMContentLoaded", function () {
+        // Check if Bootstrap Icons are loaded
+        setTimeout(function () {
+          const testIcon = document.createElement("i");
+          testIcon.className = "bi bi-check";
+          testIcon.style.position = "absolute";
+          testIcon.style.left = "-9999px";
+          document.body.appendChild(testIcon);
+
+          const computedStyle = window.getComputedStyle(testIcon, "::before");
+          const content = computedStyle.getPropertyValue("content");
+
+          if (content === "none" || content === "") {
+            // Bootstrap Icons failed to load, force emoji fallbacks
+            console.log(
+              "Bootstrap Icons failed to load, using emoji fallbacks"
+            );
+            document.documentElement.classList.add("bi-fallback");
+          }
+
+          document.body.removeChild(testIcon);
+        }, 100);
+      });
+    </script>
+  </head>
+
+  <body class="index-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.webp" alt=""> -->
+          <h1 class="sitename">FitCore</h1>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Programs</a></li>
+            <li><a href="#portfolio">Facilities</a></li>
+            <li><a href="#team">Trainers</a></li>
+            <li class="dropdown">
+              <a href="#"
+                ><span>Programs</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#services">Personal Training</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Group Classes</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#services">HIIT Training</a></li>
+                    <li><a href="#services">Yoga & Pilates</a></li>
+                    <li><a href="#services">Spin Classes</a></li>
+                    <li><a href="#services">Strength Training</a></li>
+                    <li><a href="#services">Cardio Bootcamp</a></li>
+                  </ul>
+                </li>
+                <li><a href="#services">Nutrition Coaching</a></li>
+                <li><a href="#portfolio">Gym Facilities</a></li>
+                <li><a href="#contact">Free Trial</a></li>
+              </ul>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section light-background">
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-delay="200">
+                  Transform Your Body, Transform Your Life
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="300">
+                  Join FitCore Gym and discover your strongest self. With
+                  state-of-the-art equipment, expert personal trainers, and
+                  motivating group classes, we help you achieve your fitness
+                  goals faster than ever.
+                </p>
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
+                  <a href="#services" class="btn-primary">Start Your Journey</a>
+                  <a href="#contact" class="btn-secondary">
+                    <i class="bi bi-telephone"></i>
+                    Get Free Trial
+                  </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="500">
+                  <div class="stat-item">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Happy Members</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Success Rate</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Access</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <img
+                  src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Modern Gym Interior - State-of-the-Art Equipment"
+                  class="img-fluid"
+                />
+                <div
+                  class="floating-card"
+                  data-aos="zoom-in"
+                  data-aos-delay="600"
+                >
+                  <div class="card-icon">
+                    <i class="bi bi-bar-chart"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5>Premium Equipment</h5>
+                    <div class="growth-percentage">Latest Tech</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Hero Section -->
+
+      <!-- About Section -->
+      <section id="about" class="about section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">About</span>
+          <h2>About FitCore</h2>
+          <p>
+            Premier fitness center dedicated to transforming lives through
+            fitness. We combine cutting-edge equipment with expert guidance to
+            help you achieve your health and wellness goals in a supportive,
+            motivating environment.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row align-items-center">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="content">
+                <h2>Where Fitness Dreams Become Reality</h2>
+                <p class="lead">
+                  At FitCore, we specialize in creating personalized fitness
+                  journeys that deliver real, lasting results. Our comprehensive
+                  approach combines expert training, nutrition guidance, and
+                  cutting-edge equipment.
+                </p>
+
+                <p>
+                  Our flagship programs have helped over 500 members achieve
+                  their fitness goals with a 95% success rate. From weight loss
+                  and muscle building to athletic performance and overall
+                  wellness, we provide the tools, knowledge, and support you
+                  need to succeed.
+                </p>
+
+                <p>
+                  We don't just provide gym access - we create complete
+                  transformation experiences that understand your unique goals,
+                  lifestyle, and challenges. Every program combines proven
+                  fitness science with personalized attention and measurable
+                  results.
+                </p>
+
+                <div class="stats-row">
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="8"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">Years Experience</div>
+                  </div>
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="15"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">Expert Trainers</div>
+                  </div>
+                  <div class="stat-item">
+                    <div
+                      class="stat-number purecounter"
+                      data-purecounter-start="0"
+                      data-purecounter-end="95"
+                      data-purecounter-duration="1"
+                    ></div>
+                    <div class="stat-label">Success Rate %</div>
+                  </div>
+                </div>
+
+                <div class="cta-section">
+                  <a href="#services" class="btn-outline">View Our Programs</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <div class="image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Professional Gym Training - Personal Fitness Coaching"
+                  class="img-fluid"
+                />
+                <div
+                  class="floating-card"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
+                >
+                  <div class="card-content">
+                    <div class="icon">
+                      <i class="bi bi-award"></i>
+                    </div>
+                    <div class="text">
+                      <h4>Award Winning</h4>
+                      <p>Recognized for excellence in our industry</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /About Section -->
+
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">Programs</span>
+          <h2>What We Offer</h2>
+          <p>
+            Comprehensive fitness programs designed to help you achieve your
+            goals faster. From personal training to group classes, we offer
+            everything you need to transform your body and build lasting healthy
+            habits.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-5">
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-person-check"></i>
+                </div>
+                <h3>Personal Training</h3>
+                <p>
+                  One-on-one customized workout plans designed specifically for
+                  your goals. Our certified trainers provide expert guidance,
+                  motivation, and accountability to maximize your results and
+                  ensure proper form.
+                </p>
+                <a href="service-details.html" class="service-link">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3>Group Fitness Classes</h3>
+                <p>
+                  High-energy group workouts including HIIT, yoga, spinning, and
+                  strength training. Our expert instructors create motivating
+                  environments that push you to achieve more while having fun.
+                </p>
+                <a href="service-details.html" class="service-link">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-heart-pulse"></i>
+                </div>
+                <h3>Nutrition Coaching</h3>
+                <p>
+                  Personalized meal plans and nutrition guidance from certified
+                  nutritionists. We help you fuel your workouts and optimize
+                  your results through proper nutrition and sustainable eating
+                  habits.
+                </p>
+                <a href="service-details.html" class="service-link">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-trophy"></i>
+                </div>
+                <h3>Athletic Performance</h3>
+                <p>
+                  Specialized training programs for athletes and sports
+                  enthusiasts. Focus on sport-specific movements, injury
+                  prevention, and performance optimization to help you excel in
+                  your chosen activity.
+                </p>
+                <a href="service-details.html" class="service-link">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-activity"></i>
+                </div>
+                <h3>Cardio & Conditioning</h3>
+                <p>
+                  Comprehensive cardiovascular training programs designed to
+                  improve endurance, burn calories, and boost overall fitness.
+                  Features modern equipment and varied workout routines to keep
+                  you motivated.
+                </p>
+                <a href="service-details.html" class="service-link">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bi bi-lightning"></i>
+                </div>
+                <h3>Strength Training</h3>
+                <p>
+                  Build muscle, increase strength, and improve bone density with
+                  our comprehensive weight training programs. Features free
+                  weights, machines, and functional training equipment for all
+                  fitness levels.
+                </p>
+                <a href="service-details.html" class="service-link">
+                  Learn More <i class="bi bi-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+            <!-- End Service Item -->
+          </div>
+        </div>
+      </section>
+      <!-- /Services Section -->
+
+      <!-- Why Us Section -->
+      <section id="why-us" class="why-us section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">Why FitCore</span>
+          <h2>Why Choose FitCore</h2>
+          <p>
+            FitCore Gym represents the perfect balance of cutting-edge equipment
+            and personalized attention. Built with proven fitness methodologies
+            and validated by member success stories, we deliver real
+            transformation results.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+              <div class="content">
+                <h2>Why FitCore Delivers Results</h2>
+                <p>
+                  FitCore Gym delivers exceptional fitness transformations
+                  through proven training methodologies, personalized attention,
+                  and measurable progress tracking. Our approach demonstrates
+                  how modern fitness science creates sustainable lifestyle
+                  changes.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+              <div class="image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+                  alt="Modern Gym Equipment - Strength Training Area"
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="features-grid" data-aos="fade-up" data-aos-delay="400">
+            <div class="row g-5">
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-lightbulb"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>State-of-the-Art Equipment</h3>
+                    <p>
+                      Premium fitness equipment from leading brands including
+                      Technogym, Life Fitness, and Hammer Strength. Features
+                      cardio machines with entertainment systems, free weights,
+                      and functional training areas.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Feature Item -->
+
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-award"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>Proven Member Results</h3>
+                    <p>
+                      FitCore serves 500+ active members with 95% goal
+                      achievement rate and measurable fitness improvements. Our
+                      programs generate real transformations through
+                      personalized training and comprehensive support systems.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Feature Item -->
+
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-headset"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>24/7 Premium Access</h3>
+                    <p>
+                      Round-the-clock gym access with comprehensive security,
+                      climate control, and equipment maintenance. Built for
+                      convenience with keycard access that accommodates your
+                      busy schedule seamlessly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Feature Item -->
+
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-item">
+                  <div class="icon-wrapper">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h3>Flexible Membership Plans</h3>
+                    <p>
+                      Variety of membership options from basic access to premium
+                      packages with personal training. Designed to fit your
+                      budget and fitness goals while maintaining access to all
+                      essential facilities and equipment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Feature Item -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Why Us Section -->
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="portfolio section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">Facilities</span>
+          <h2>Our Gym Facilities</h2>
+          <p>
+            State-of-the-art fitness facilities designed to support every aspect
+            of your fitness journey. From cardio and strength equipment to
+            specialized training areas, we provide everything you need to
+            achieve your goals.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="isotope-layout"
+            data-default-filter="*"
+            data-layout="masonry"
+            data-sort="original-order"
+          >
+            <ul
+              class="portfolio-filters isotope-filters"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <li data-filter="*" class="filter-active">All Areas</li>
+              <li data-filter=".filter-design">Cardio Zone</li>
+              <li data-filter=".filter-development">Strength Training</li>
+              <li data-filter=".filter-strategy">Group Classes</li>
+              <li data-filter=".filter-consulting">Recovery & Wellness</li>
+            </ul>
+            <!-- End Portfolio Filters -->
+
+            <div
+              class="row gy-5 isotope-container"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="col-lg-12 portfolio-item isotope-item filter-design">
+                <article class="portfolio-card">
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <div class="project-visual">
+                        <img
+                          src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                          alt="Cardio Zone - Modern Treadmills and Equipment"
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                        <div class="project-overlay">
+                          <div class="overlay-content">
+                            <a
+                              href="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                              class="view-project glightbox"
+                              aria-label="View project image"
+                            >
+                              <i class="bi bi-eye"></i>
+                            </a>
+                            <a
+                              href="#"
+                              class="project-link"
+                              aria-label="View project details"
+                            >
+                              <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-details">
+                        <div class="project-header">
+                          <span class="project-category">Cardio Zone</span>
+                          <time class="project-year">2024</time>
+                        </div>
+                        <h3 class="project-title">Cardio & Endurance Center</h3>
+                        <p class="project-description">
+                          Modern cardio equipment with integrated entertainment
+                          systems and heart rate monitoring. Features
+                          treadmills, ellipticals, bikes, and rowing machines
+                          designed for maximum comfort and effectiveness.
+                        </p>
+                        <div class="project-meta">
+                          <span class="client-name">50+ Premium Machines</span>
+                          <div class="project-scope">
+                            <span class="scope-item">Treadmills</span>
+                            <span class="scope-item">Ellipticals</span>
+                            <span class="scope-item">Rowing Machines</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div
+                class="col-lg-12 portfolio-item isotope-item filter-development"
+              >
+                <article class="portfolio-card">
+                  <div class="row g-4">
+                    <div class="col-md-6 order-md-2">
+                      <div class="project-visual">
+                        <img
+                          src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                          alt="Strength Training Zone - Free Weights and Power Racks"
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                        <div class="project-overlay">
+                          <div class="overlay-content">
+                            <a
+                              href="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                              class="view-project glightbox"
+                              aria-label="View project image"
+                            >
+                              <i class="bi bi-eye"></i>
+                            </a>
+                            <a
+                              href="#"
+                              class="project-link"
+                              aria-label="View project details"
+                            >
+                              <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                      <div class="project-details">
+                        <div class="project-header">
+                          <span class="project-category">Development</span>
+                          <time class="project-year">2024</time>
+                        </div>
+                        <h3 class="project-title">Strength Training Zone</h3>
+                        <p class="project-description">
+                          Scalable Node.js backend with PostgreSQL database,
+                          handling real-time data processing for 500+ concurrent
+                          users. Features JWT authentication, RESTful APIs, and
+                          third-party integrations.
+                        </p>
+                        <div class="project-meta">
+                          <span class="client-name"
+                            >99.9% Uptime Achievement</span
+                          >
+                          <div class="project-scope">
+                            <span class="scope-item">Node.js & Express</span>
+                            <span class="scope-item">PostgreSQL Database</span>
+                            <span class="scope-item">AWS Deployment</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div
+                class="col-lg-12 portfolio-item isotope-item filter-strategy"
+              >
+                <article class="portfolio-card">
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <div class="project-visual">
+                        <img
+                          src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                          alt="Group Fitness Studio - Yoga and Group Classes"
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                        <div class="project-overlay">
+                          <div class="overlay-content">
+                            <a
+                              href="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                              class="view-project glightbox"
+                              aria-label="View project image"
+                            >
+                              <i class="bi bi-eye"></i>
+                            </a>
+                            <a
+                              href="#"
+                              class="project-link"
+                              aria-label="View project details"
+                            >
+                              <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-details">
+                        <div class="project-header">
+                          <span class="project-category">Group Classes</span>
+                          <time class="project-year">2024</time>
+                        </div>
+                        <h3 class="project-title">Group Fitness Studio</h3>
+                        <p class="project-description">
+                          Spacious studio designed for group fitness classes
+                          including yoga, pilates, HIIT, and dance. Features
+                          premium sound system, mirrors, and flexible space
+                          configuration for various class formats.
+                        </p>
+                        <div class="project-meta">
+                          <span class="client-name"
+                            >Premium Group Experience</span
+                          >
+                          <div class="project-scope">
+                            <span class="scope-item">Yoga Classes</span>
+                            <span class="scope-item">HIIT Training</span>
+                            <span class="scope-item">Dance Fitness</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div
+                class="col-lg-12 portfolio-item isotope-item filter-consulting"
+              >
+                <article class="portfolio-card">
+                  <div class="row g-4">
+                    <div class="col-md-6 order-md-2">
+                      <div class="project-visual">
+                        <img
+                          src="https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                          alt="Recovery & Wellness Area - Stretching and Relaxation Zone"
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                        <div class="project-overlay">
+                          <div class="overlay-content">
+                            <a
+                              href="https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                              class="view-project glightbox"
+                              aria-label="View project image"
+                            >
+                              <i class="bi bi-eye"></i>
+                            </a>
+                            <a
+                              href="#"
+                              class="project-link"
+                              aria-label="View project details"
+                            >
+                              <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                      <div class="project-details">
+                        <div class="project-header">
+                          <span class="project-category">Business Impact</span>
+                          <time class="project-year">2024</time>
+                        </div>
+                        <h3 class="project-title">FitCore Business Results</h3>
+                        <p class="project-description">
+                          Measurable business impact with 70% reduction in
+                          reporting time, 90% user retention rate, and $50K ARR
+                          projection. Serving SMBs, startups, and marketing
+                          agencies with proven ROI.
+                        </p>
+                        <div class="project-meta">
+                          <span class="client-name">Proven Market Success</span>
+                          <div class="project-scope">
+                            <span class="scope-item">70% Time Savings</span>
+                            <span class="scope-item">90% User Retention</span>
+                            <span class="scope-item">$50K ARR Target</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div class="col-lg-12 portfolio-item isotope-item filter-design">
+                <article class="portfolio-card">
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <div class="project-visual">
+                        <img
+                          src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                          alt="Functional Training Area - CrossFit and HIIT Zone"
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                        <div class="project-overlay">
+                          <div class="overlay-content">
+                            <a
+                              href="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                              class="view-project glightbox"
+                              aria-label="View project image"
+                            >
+                              <i class="bi bi-eye"></i>
+                            </a>
+                            <a
+                              href="#"
+                              class="project-link"
+                              aria-label="View project details"
+                            >
+                              <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-details">
+                        <div class="project-header">
+                          <span class="project-category">UI/UX Design</span>
+                          <time class="project-year">2024</time>
+                        </div>
+                        <h3 class="project-title">FitCore User Experience</h3>
+                        <p class="project-description">
+                          User-centered design approach with comprehensive user
+                          research, wireframing, and usability testing. Created
+                          intuitive workflows that reduced onboarding time by
+                          60% and improved user satisfaction.
+                        </p>
+                        <div class="project-meta">
+                          <span class="client-name">User-Centered Design</span>
+                          <div class="project-scope">
+                            <span class="scope-item">User Research</span>
+                            <span class="scope-item">Wireframing</span>
+                            <span class="scope-item">Usability Testing</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <div
+                class="col-lg-12 portfolio-item isotope-item filter-development"
+              >
+                <article class="portfolio-card">
+                  <div class="row g-4">
+                    <div class="col-md-6 order-md-2">
+                      <div class="project-visual">
+                        <img
+                          src="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                          alt="Swimming Pool - Aquatic Fitness and Lap Swimming"
+                          class="img-fluid"
+                          loading="lazy"
+                        />
+                        <div class="project-overlay">
+                          <div class="overlay-content">
+                            <a
+                              href="https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80"
+                              class="view-project glightbox"
+                              aria-label="View project image"
+                            >
+                              <i class="bi bi-eye"></i>
+                            </a>
+                            <a
+                              href="#"
+                              class="project-link"
+                              aria-label="View project details"
+                            >
+                              <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                      <div class="project-details">
+                        <div class="project-header">
+                          <span class="project-category">Development</span>
+                          <time class="project-year">2024</time>
+                        </div>
+                        <h3 class="project-title">FitCore API Integrations</h3>
+                        <p class="project-description">
+                          Seamless third-party integrations with Google
+                          Analytics, Stripe, and popular business tools. RESTful
+                          API design with comprehensive documentation, rate
+                          limiting, and real-time data synchronization.
+                        </p>
+                        <div class="project-meta">
+                          <span class="client-name"
+                            >Multi-Platform Integration</span
+                          >
+                          <div class="project-scope">
+                            <span class="scope-item">Google Analytics</span>
+                            <span class="scope-item">Stripe Payments</span>
+                            <span class="scope-item">RESTful APIs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <!-- End Portfolio Items Container -->
+          </div>
+
+          <div
+            class="portfolio-conclusion"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="conclusion-content">
+              <h4>Ready to build your SaaS platform?</h4>
+              <p>
+                Let's discuss how FitCore's proven architecture and development
+                approach can transform your business idea into a successful SaaS
+                product.
+              </p>
+              <div class="conclusion-actions">
+                <a href="#contact" class="primary-action">
+                  Start Your Project
+                  <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="#about" class="secondary-action">
+                  Learn More About FitCore
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Portfolio Section -->
+
+      <!-- Team Section -->
+      <section id="team" class="team section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">Trainers</span>
+          <h2>Meet Our Expert Trainers</h2>
+          <p>
+            Meet the certified fitness professionals behind FitCore's success.
+            With expertise in strength training, cardio conditioning, and
+            nutrition, our trainers deliver personalized guidance that gets real
+            results.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-5">
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="team-member">
+                <div class="member-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    class="img-fluid"
+                    alt="Sarah Johnson - Certified Personal Trainer"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>Sarah Johnson</h4>
+                  <span>Certified Personal Trainer</span>
+                  <p>
+                    8+ years specializing in strength training, weight loss, and
+                    body transformation. Sarah's personalized approach has
+                    helped over 200 clients achieve their fitness goals with
+                    sustainable, long-term results.
+                  </p>
+                  <div class="social">
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-trophy"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
+              <div class="team-member">
+                <div class="member-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    class="img-fluid"
+                    alt="Mike Rodriguez - Strength Training Specialist"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>Mike Rodriguez</h4>
+                  <span>Strength Training Specialist</span>
+                  <p>
+                    Certified strength and conditioning coach with 6+ years
+                    experience. Mike specializes in powerlifting, bodybuilding,
+                    and functional training, helping members build strength
+                    safely and effectively with proven progressive overload
+                    techniques.
+                  </p>
+                  <div class="social">
+                    <a href="#"><i class="bi bi-barbell"></i></a>
+                    <a href="#"><i class="bi bi-lightning"></i></a>
+                    <a href="#"><i class="bi bi-award"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="team-member">
+                <div class="member-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid"
+                    alt="Emma Chen - Yoga and Wellness Instructor"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>Emma Chen</h4>
+                  <span>Yoga & Wellness Instructor</span>
+                  <p>
+                    Certified yoga instructor with expertise in Hatha, Vinyasa,
+                    and restorative yoga. Emma creates inclusive classes for all
+                    levels, focusing on flexibility, mindfulness, and stress
+                    relief to complement your fitness journey.
+                  </p>
+                  <div class="social">
+                    <a href="#"><i class="bi bi-heart"></i></a>
+                    <a href="#"><i class="bi bi-peace"></i></a>
+                    <a href="#"><i class="bi bi-flower1"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Team Member -->
+
+            <div
+              class="col-lg-3 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay="350"
+            >
+              <div class="team-member">
+                <div class="member-img">
+                  <img
+                    src="https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                    class="img-fluid"
+                    alt="David Thompson - Cardio and Conditioning Coach"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="member-info">
+                  <h4>David Thompson</h4>
+                  <span>Cardio & Conditioning Coach</span>
+                  <p>
+                    High-energy cardio specialist with expertise in HIIT,
+                    circuit training, and endurance conditioning. David's
+                    motivating classes help members improve cardiovascular
+                    health, burn calories, and build stamina for peak athletic
+                    performance.
+                  </p>
+                  <div class="social">
+                    <a href="#"><i class="bi bi-speedometer2"></i></a>
+                    <a href="#"><i class="bi bi-fire"></i></a>
+                    <a href="#"><i class="bi bi-trophy"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Team Member -->
+          </div>
+        </div>
+      </section>
+      <!-- /Team Section -->
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">Testimonials</span>
+          <h2>Member Success Stories</h2>
+          <p>
+            Real transformation stories from FitCore members who have achieved
+            their fitness goals. These testimonials reflect the life-changing
+            impact of our personalized training programs and supportive
+            community.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="testimonial-slider swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 4000
+                },
+                "slidesPerView": 1,
+                "spaceBetween": 30,
+                "navigation": {
+                  "nextEl": ".swiper-button-next",
+                  "prevEl": ".swiper-button-prev"
+                },
+                "breakpoints": {
+                  "768": {
+                    "slidesPerView": 2
+                  },
+                  "1200": {
+                    "slidesPerView": 3
+                  }
+                }
+              }
+            </script>
+
+            <div class="swiper-wrapper">
+              <!-- Testimonial Slide 1 -->
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                >
+                  <div class="testimonial-header">
+                    <img
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                      alt="FitCore User - Marketing Director"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-body">
+                    <p>
+                      "FitCore Dashboard transformed how we understand our
+                      business. What used to take hours of manual reporting now
+                      happens automatically, giving us real-time insights that
+                      drive our decisions. The 70% time savings is real."
+                    </p>
+                  </div>
+                  <div class="testimonial-footer">
+                    <h5>Sarah Martinez</h5>
+                    <span>Marketing Director</span>
+                    <div class="quote-icon">
+                      <i class="bi bi-chat-quote-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Testimonial Slide -->
+
+              <!-- Testimonial Slide 2 -->
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                >
+                  <div class="testimonial-header">
+                    <img
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                      alt="FitCore User - Senior Developer"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-body">
+                    <p>
+                      "The technical architecture behind FitCore is impressive.
+                      Real-time data updates, scalable infrastructure, and clean
+                      code architecture. As a developer, I appreciate the
+                      attention to both performance and maintainability."
+                    </p>
+                  </div>
+                  <div class="testimonial-footer">
+                    <h5>David Rodriguez</h5>
+                    <span>Senior Developer</span>
+                    <div class="quote-icon">
+                      <i class="bi bi-chat-quote-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Testimonial Slide -->
+
+              <!-- Testimonial Slide 3 -->
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
+                >
+                  <div class="testimonial-header">
+                    <img
+                      src="https://images.unsplash.com/photo-1611451444023-7fe9d86fe1d0?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                      alt="Amanda Wilson - Group Class Enthusiast"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-body">
+                    <p>
+                      "The group classes at FitCore are incredibly motivating!
+                      Emily's HIIT sessions are challenging yet fun, and I love
+                      the community vibe. It's more than just a gym; it's a
+                      place where I feel supported and energized."
+                    </p>
+                  </div>
+                  <div class="testimonial-footer">
+                    <h5>Amanda Wilson</h5>
+                    <span>Group Class Enthusiast</span>
+                    <div class="quote-icon">
+                      <i class="bi bi-chat-quote-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Testimonial Slide -->
+
+              <!-- Testimonial Slide 4 -->
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="zoom-in"
+                  data-aos-delay="500"
+                >
+                  <div class="testimonial-header">
+                    <img
+                      src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                      alt="Client"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-body">
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium totam rem
+                      aperiam eaque ipsa quae ab illo inventore veritatis.
+                    </p>
+                  </div>
+                  <div class="testimonial-footer">
+                    <h5>Ryan Thompson</h5>
+                    <span>Business Analyst</span>
+                    <div class="quote-icon">
+                      <i class="bi bi-chat-quote-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Testimonial Slide -->
+
+              <!-- Testimonial Slide 5 -->
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="zoom-in"
+                  data-aos-delay="600"
+                >
+                  <div class="testimonial-header">
+                    <img
+                      src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                      alt="Client"
+                      class="img-fluid"
+                      loading="lazy"
+                    />
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                  <div class="testimonial-body">
+                    <p>
+                      At vero eos et accusamus et iusto odio dignissimos ducimus
+                      qui blanditiis praesentium voluptatum deleniti atque
+                      corrupti quos dolores et quas molestias excepturi.
+                    </p>
+                  </div>
+                  <div class="testimonial-footer">
+                    <h5>Rachel Chen</h5>
+                    <span>Project Manager</span>
+                    <div class="quote-icon">
+                      <i class="bi bi-chat-quote-fill"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Testimonial Slide -->
+            </div>
+
+            <div class="swiper-navigation">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Testimonials Section -->
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact section light-background">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <span class="subtitle">Contact</span>
+          <h2>Let's Build Your SaaS</h2>
+          <p>
+            Ready to create your own FitCore-quality SaaS platform? Let's
+            discuss your project requirements and how I can help you build
+            scalable, user-focused applications that deliver real business
+            value.
+          </p>
+        </div>
+        <!-- End Section Title -->
+
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5">
+              <div class="info-item">
+                <div class="info-icon">
+                  <i class="bi bi-chat-dots"></i>
+                </div>
+                <div class="info-content">
+                  <h4>Start Your SaaS Project</h4>
+                  <p>
+                    Ready to build a FitCore-quality SaaS platform? Let's
+                    discuss your requirements and create a scalable solution
+                    that delivers real business impact.
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-details">
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-envelope-open"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Email me</span>
+                    <span class="detail-value">hello@datavue.dev</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-telephone-outbound"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Call us</span>
+                    <span class="detail-value">+1 (555) 432-8976</span>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div class="detail-content">
+                    <span class="detail-label">Visit us</span>
+                    <span class="detail-value"
+                      >547 Madison Avenue<br />New York, NY 10022</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="form-wrapper">
+                <div class="form-header">
+                  <h3>Let's discuss your SaaS project</h3>
+                </div>
+
+                <form
+                  action="forms/contact.php"
+                  method="post"
+                  class="php-email-form"
+                >
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" name="name" required="" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" name="email" required="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label>Subject</label>
+                    <input type="text" name="subject" required="" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="projectMessage">Message</label>
+                    <textarea
+                      name="message"
+                      id="projectMessage"
+                      rows="5"
+                      required=""
+                    ></textarea>
+                  </div>
+
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">
+                      Your message has been sent. Thank you!
+                    </div>
+                  </div>
+
+                  <button type="submit" class="submit-btn">
+                    <span>Send Message</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Contact Section -->
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+      <div class="container footer-top">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">FitCore</span>
+            </a>
+            <p>
+              Full-stack SaaS developer creating scalable dashboard
+              applications. FitCore Dashboard serves 500+ users with 99.9%
+              uptime, demonstrating expertise in React, Node.js, and modern
+              cloud architecture.
+            </p>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="#services">Full-Stack Development</a></li>
+              <li><a href="#services">SaaS Product Development</a></li>
+              <li><a href="#services">Dashboard & Analytics</a></li>
+              <li><a href="#services">API Development</a></li>
+              <li><a href="#services">Cloud Architecture</a></li>
+            </ul>
+          </div>
+
+          <div
+            class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+          >
+            <h4>Get In Touch</h4>
+            <p>Available for SaaS development projects</p>
+            <p>Remote collaboration worldwide</p>
+            <p>Specializing in React & Node.js</p>
+            <p class="mt-4">
+              <strong>Portfolio:</strong> <span>FitCore Dashboard</span>
+            </p>
+            <p><strong>Email:</strong> <span>hello@datavue.dev</span></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container copyright text-center mt-4"></div>
+    </footer>
+
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
