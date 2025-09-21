@@ -1186,6 +1186,10 @@ section,
   );
 }
 
+.services .row {
+  align-items: stretch;
+}
+
 .services .service-item {
   padding: 60px 40px;
   background-color: var(--surface-color);
@@ -1838,10 +1842,17 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+.team .row {
+  align-items: stretch;
+}
+
 .team .team-member {
   text-align: center;
   margin-bottom: 40px;
   transition: all 0.3s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .team .team-member .member-img {
@@ -1875,18 +1886,26 @@ section,
   letter-spacing: 0.5px;
 }
 
+.team .team-member .member-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .team .team-member .member-info p {
   font-size: 0.95rem;
   line-height: 1.7;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   margin-bottom: 25px;
   padding: 0 10px;
+  flex-grow: 1;
 }
 
 .team .team-member .member-info .social {
   display: flex;
   justify-content: center;
   gap: 15px;
+  margin-top: auto;
 }
 
 .team .team-member .member-info .social a {
@@ -1973,11 +1992,13 @@ section,
   );
   border-radius: 20px;
   padding: 0;
-  height: 100%;
+  height: 420px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   transition: all 0.4s ease;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .testimonials .testimonial-item::before {
@@ -2049,6 +2070,9 @@ section,
 
 .testimonials .testimonial-body {
   padding: 0 30px 20px;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .testimonials .testimonial-body p {
@@ -2169,6 +2193,10 @@ section,
 }
 
 @media (max-width: 1199px) {
+  .testimonials .testimonial-item {
+    height: 400px;
+  }
+
   .testimonials .testimonial-item .testimonial-header {
     padding: 25px 25px 15px;
   }
@@ -2187,11 +2215,16 @@ section,
 
 @media (max-width: 991px) {
   .testimonials .testimonial-item {
+    height: 380px;
     margin-bottom: 30px;
   }
 }
 
 @media (max-width: 767px) {
+  .testimonials .testimonial-item {
+    height: 350px;
+  }
+
   .testimonials .testimonial-item .testimonial-header {
     padding: 20px 20px 10px;
   }
